@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<% imgs.forEach(function(image){ %>
+		<img src="<%= image.img %>" alt="" width="500" height="500">
+			<p>
+				<a href="/<%= image._id %>/view">
+					<button id="splbutton">
+						<div id="spltext">
+							View
+						</div>
+					</button>
+				 </a>			
+			</p>
+	<% }); %> 
+
+</body>
+</html>
